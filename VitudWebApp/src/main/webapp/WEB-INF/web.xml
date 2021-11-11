@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <servlet>
+    <servlet-name>Announcement</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.Announcement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Announcement</servlet-name>
+    <url-pattern>/create/announcement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Announcements</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.Announcements</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Announcements</servlet-name>
+    <url-pattern>/announcements</url-pattern>
+  </servlet-mapping>
+</web-app>
