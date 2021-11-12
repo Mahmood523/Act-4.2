@@ -8,36 +8,47 @@
 </head>
 <body>
      <%@ include file="Header.jsp" %>
-  <section>   
+     <h1> Ajouter une annonce</h1>
+     <form action="CreateAnnouncement" method="post" >
+     <table>
+     
      <tr>
-     <td><label for="title">Titre : </label></td> 
-     <td><input type="text" name ="title" id ="title"></td>
+     <td>Titre :</td> 
+     <td><input type="text" name ="title" ></td>
      </tr> 
-  </section>
   
-  <section>
+  
+  
      <tr>   
      <td><label for="description">Description : </label></td> 
-     <td><input type="text" name ="description" id ="description"></td>
+     <td><input type="text" name ="description" ></td>
      </tr>
-  </section>
   
-  <section class="categories">
-     <label for="category">Categorie :</label>
-     <select name="category" id="category">  
-     <option value="client"> Client </option> 
-     <option value="admin"> Administrateur </option> 
+  
+  
+     <tr><td>Categorie :</td>
+     <td>
+     <select name="category" >  
+     <option value=""></option>
+     <option value="T-SHIRT"> T-SHIRT </option> 
+     <option value="Pantalon"> Pantalon </option>
+     <option value="Veste"> Veste </option> 
      </select>
-     </section>
+     </td>
+     </tr>
+     
   
-  <section>   
-     <label for="price">Prix :  </label> 
-     <input type="number" name ="price" id ="price">
-  </section>
+     <tr>
+     <td><label for="price">Prix :  </label></td> 
+     <td><input type="number" name ="price" ></td>
+     </tr>
   
-  <section>   
-     <label for="localisation">Localisation : : </label> 
-     <input type="text" name ="localisation" id ="localisation">
-  </section>
+     <tr>
+     <td><label for="localisation">Localisation :  </label></td> 
+     <td><input type="text" name ="localisation" ></td>
+     </tr>
+     <tr><td></td><td colspan="2"><input type="submit" value="Ajouter"/></td></tr>
+     </table>
+     </form>
 </body>
 </html>

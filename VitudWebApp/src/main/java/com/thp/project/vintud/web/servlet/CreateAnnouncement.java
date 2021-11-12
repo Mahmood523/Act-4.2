@@ -2,6 +2,8 @@ package com.thp.project.vintud.web.servlet;
 
 import java.io.IOException;
 
+import com.thp.project.vintud.entity.Announcement;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -28,7 +30,20 @@ public class CreateAnnouncement extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		
+		String titre = request.getParameter("title");
+		String description = request.getParameter("description");
+		String categorie = request.getParameter("category");
+		String prix = request.getParameter("price");
+		String localisation = request.getParameter("localisation");
+		
+		Announcement annonce = new Announcement();
+		annonce.setTitle(titre);
+		annonce.setDescription(description);
+		
+		annonce.setPrice(Float.parseFloat(prix));
+		annonce.setLocalisation(localisation);
+		
 	}
 
 }
