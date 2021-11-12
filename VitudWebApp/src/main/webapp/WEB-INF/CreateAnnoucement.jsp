@@ -9,25 +9,29 @@
 <body>
      <%@ include file="Header.jsp" %>
   <section>   
-     <label for="title">Titre : </label> 
-     <input type="text" name ="title" id ="title">
+     <tr>
+     <td><label for="title">Titre : </label></td> 
+     <td><input type="text" name ="title" id ="title"></td>
+     </tr> 
   </section>
   
-  <section>   
-     <label for="description">Description : </label> 
-     <input type="text" name ="description" id ="description">
+  <section>
+     <tr>   
+     <td><label for="description">Description : </label></td> 
+     <td><input type="text" name ="description" id ="description"></td>
+     </tr>
   </section>
   
   <section class="categories">
-     <span>Categorie :</span>   
-     <label for="client"> Client </label> 
-     <input type="checkbox" name ="client" id ="client">
-     <label for="admin"> Administrateur </label> 
-     <input type="checkbox" name ="admin" id ="admin">
-  </section>
+     <label for="category">Categorie :</label>
+     <select name="category" id="category">  
+     <option value="client"> Client </option> 
+     <option value="admin"> Administrateur </option> 
+     </select>
+     </section>
   
   <section>   
-     <label for="price">Prix : : </label> 
+     <label for="price">Prix :  </label> 
      <input type="number" name ="price" id ="price">
   </section>
   

@@ -70,8 +70,7 @@ public class Announcement implements AnnouncementImpl {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-
+	
 	public int getCategory_id() {
 		return category_id;
 	}
@@ -80,6 +79,9 @@ public class Announcement implements AnnouncementImpl {
 	public void setCategory_id(int category_id) {
 		this.category_id = category_id;
 	}
+
+
+	
 
 
 	public double getPrice() {
@@ -130,6 +132,9 @@ public class Announcement implements AnnouncementImpl {
 	public void setView_number(int view_number) {
 		this.view_number = view_number;
 	}
+	
+	
+	
 
 
 	public String getLocalisation() {
@@ -154,11 +159,16 @@ public class Announcement implements AnnouncementImpl {
 
 	@Override
 	public String toString() {
-		return "Announcement [id=" + id + ", title=" + title + ", description=" + description + ", category_id="
+		return "Announcement [id=" + id + ", title=" + title + ", description=" + description + ", category="
 				+ category_id + ", price=" + price + ", picture=" + Arrays.toString(picture) + ", publication_date="
 				+ publication_date + ", is_available=" + is_available + ", view_number=" + view_number
 				+ ", localisation=" + localisation + ", user_id=" + user_id + "]";
 	}
+
+
+	
+
+
 	
 	
 	

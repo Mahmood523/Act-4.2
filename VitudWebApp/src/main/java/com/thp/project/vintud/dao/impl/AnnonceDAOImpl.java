@@ -76,7 +76,7 @@ public class AnnonceDAOImpl implements AnnonceDAO {
 	
 
 	@Override
-	public void addAnnonce(Announcement A) throws SQLException {
+	public void addAnnonce(Announcement A)  {
 		
 		try {
     		String requete= "INSERT INTO vintud.announcement VALUES (?,?,?,?,?,?,?,?,? );";

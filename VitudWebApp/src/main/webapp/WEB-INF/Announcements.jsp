@@ -22,13 +22,10 @@
        </thead>
        <%
        ArrayList<Announcement> annonces = (ArrayList<Announcement>)request.getAttribute("ListAnnonces");
-       
        for (Announcement an:annonces){
-    	   
-  
-    	   
     	   out.print("<tr> <th>"+an.getTitle()+"</th><th>"+an.getDescription()+"</th><th>"+an.getCategory_id()+"</th><th>"+an.getPrice()+"</th><th>"+an.getLocalisation()+"</th></tr>");
        }
+       
        %>
      </table>
 

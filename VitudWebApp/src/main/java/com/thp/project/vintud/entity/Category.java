@@ -6,12 +6,20 @@ public class Category implements CategoryImpl {
 
 	
 	
+	
+
+
 	private int id ;
 	private String name  ;
 	private String description  ;
 	
 	
 	public Category() {
+	}
+	
+    public Category(String name) {
+		
+		this.name = name;
 	}
 
 

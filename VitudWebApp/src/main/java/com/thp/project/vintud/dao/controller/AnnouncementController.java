@@ -19,5 +19,11 @@ public class AnnouncementController {
 		return annonceDao.afficherAnnonces();
 		
 	}
+	public void setAnnonce(Announcement A) {
+		 annonceDao.addAnnonce(A);
+		
+	}
+	
+	
 
 }
